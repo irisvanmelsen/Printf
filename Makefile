@@ -6,7 +6,7 @@
 #    By: ivan-mel <ivan-mel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/08 15:58:37 by ivan-mel          #+#    #+#              #
-#    Updated: 2022/11/08 17:03:35 by ivan-mel         ###   ########.fr        #
+#    Updated: 2022/11/09 12:25:35 by ivan-mel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC			=	ft_printf.c \
 				hexafunctions.c \
 #SRCB		=	
 OBJ_FILES	=	${SRC:.c=.o}
-OBJB_FILES	=	${SRCB:.c=.o}
+#OBJB_FILES	=	${SRCB:.c=.o}
 OBJ_DIR	=	./obj/
 # Reset
 Color_Off	=	"\033[0m"			# Text Reset

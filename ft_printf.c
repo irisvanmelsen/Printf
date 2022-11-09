@@ -6,7 +6,7 @@
 /*   By: ivan-mel <ivan-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 21:57:53 by iris              #+#    #+#             */
-/*   Updated: 2022/11/08 17:27:59 by ivan-mel         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:25:34 by ivan-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,104 +15,6 @@
 #include "ft_printf.h"
 #include <stdio.h>
 #include <unistd.h>
-
-// int printchar(char c)
-// {
-//     write(1, &c, 1);
-//     return (1);
-// }
-
-// int printstr(char *str)
-// {
-//     int i;
-//     int counter;
-
-//     i = 0;
-//     counter = 0;
-//     if (str == NULL)
-//         return (write(1, "(null)", 6));
-//     while (str[i] != '\0')
-//     {
-//         counter += printchar(str[i]);
-//         i++;
-//     }
-//     return (counter);
-// }
-
-// int	putnbr(int nb)
-// {
-//     int     counter;
-
-//     counter = 0;
-// 	if (nb == -2147483648)
-//         return (write(1, "-2147483648", 11));
-//     if (nb < 0)
-// 	{
-//         nb = nb * -1;
-// 		counter += printchar('-');
-// 	}
-// 	if (nb < 10)
-//     {
-// 		counter += printchar(nb + '0');
-// 	} 
-//     if (nb >= 10)
-//     {
-// 		counter += putnbr(nb / 10);
-// 		counter += putnbr(nb % 10);
-//     }
-//     return (counter);
-// }
-
-// int	putun(unsigned int nb)
-// {
-//     unsigned int     counter;
-
-//     counter = 0;
-// 	if (nb < 10)
-//     {
-// 		counter += printchar(nb + '0');
-// 	} 
-//     if (nb >= 10)
-//     {
-// 		counter += putnbr(nb / 10);
-// 		counter += putnbr(nb % 10);
-//     }
-//     return (counter);
-// }
-
-// int printhexalow(unsigned long nb, char const *str)
-// {
-//     unsigned int     counter;
-
-//     counter = 0;
-// 	if (nb < 16)
-//     {
-// 		counter += printchar(str[nb]);
-// 	} 
-//     if (nb >= 16)
-//     {
-// 		counter += printhexalow(nb / 16, "0123456789abcdef");
-// 		counter += printhexalow(nb % 16, "0123456789abcdef");
-//     }
-//     return (counter);
-// }
-
-// int printhexaup(unsigned long nb, char const *str)
-// {
-//     unsigned int     counter;
-
-//     counter = 0;
-// 	if (nb < 16)
-//     {
-// 		counter += printchar(str[nb]);
-// 	} 
-//     if (nb >= 16)
-//     {
-// 		counter += printhexaup(nb / 16, "0123456789ABCDEF");
-// 		counter += printhexaup(nb % 16, "0123456789ABCDEF");
-//     }
-//     return (counter);
-// }
 
 int	formatlist(va_list args, char format)
 {
